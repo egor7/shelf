@@ -14,6 +14,10 @@ func main() {
 	sz := num.Option(pkg.Size(50))
 	fmt.Println(num)
 
+	f := pkg.Size(500)
+	f(&num)
+	fmt.Println(num)
+
 	num.Option(sz)
 	fmt.Println(num)
 }
